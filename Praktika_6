@@ -1,0 +1,187 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPS3WNc/SHcCN/nuR5CSZ6m",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Denisenko-DG/practics/blob/practic-work-3/Praktika_6\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V2HnqQQobJzq",
+        "outputId": "94863206-682c-411d-83c7-89992c6306d6"
+      },
+      "source": [
+        "[1]\n",
+        "def nested_sum(t):\n",
+        "  sm = 0\n",
+        "  for el in t:\n",
+        "    sm += sum(el)\n",
+        "    return sm \n",
+        "print(nested_sum([[1,2,3],[4,5]])) # example"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9J7Yhcy0cV6O",
+        "outputId": "bfdc9f33-b419-436f-aebe-a7e63f0059c0"
+      },
+      "source": [
+        "def cumsum(t):\n",
+        "  t1=[]\n",
+        "  for i in range (len(t)):\n",
+        "    t1.append(sum(t[:i+1]))\n",
+        "    return t1\n",
+        "print(cumsum([1,2,3,4,5])) # example"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dshYciDVeI8F",
+        "outputId": "7a3654b4-8276-4d86-9be0-10938f224b16"
+      },
+      "source": [
+        "def middle(t):\n",
+        "  return t[1:-1]\n",
+        "print(middle([1,2,3,4,5,6])) #example\n",
+        "  \n",
+        "  "
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2, 3, 4, 5]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dJNWyZ2neuju",
+        "outputId": "ac8a8e00-06de-412e-ccad-dab7ae884905"
+      },
+      "source": [
+        "def chop(t):\n",
+        "  t = t[1-1]\n",
+        "  print(t)\n",
+        "t = chop([1,2,3,4,5,6,])\n",
+        "print(t)\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "None\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ta5JrMi6hJ_Q",
+        "outputId": "780ebccb-a45d-4167-9cf0-cb3510634251"
+      },
+      "source": [
+        "def is_sorted(t):\n",
+        "  if sorted(t) == t:\n",
+        "    return True\n",
+        "  return False\n",
+        "print(is_sorted([1,2,3])) # example\n",
+        "print(is_sorted([3,1,2])) # example"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "M9RIWVt5ioEs"
+      },
+      "source": [
+        "def is_anagram(word,word1)\n",
+        "word = sorted(word)\n",
+        "word1\n",
+        "if word ==word1\n"
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}

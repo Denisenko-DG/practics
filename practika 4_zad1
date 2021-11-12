@@ -1,0 +1,9 @@
+print('скорость ТС')
+V = int(input())
+print('Сколько времени двигалось? ')
+T = int(input())
+a = int(input())
+print('Время',' ','Путь')
+a!= T+1;
+print(a,'ч','   ', V*a,'км')
+a=a+1 

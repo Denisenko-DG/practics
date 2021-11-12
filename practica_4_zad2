@@ -1,0 +1,7 @@
+s = 0
+c = int(input("Введите число: "))
+if c >= 0:
+  while c >= 0: 
+    s = s+c
+    c = int(input("Введите следующее число: "))
+  print(s)      
